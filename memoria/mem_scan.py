@@ -4,7 +4,8 @@ import os,commands
 time = 40
 proc = ["apache"]
 fich = "/tmp/mem_usage.dat"
-os.system("rm "+fich)
+if os.path.exists(fich):
+        os.system("rm "+fich)
 
 for i in range(time):
         os.system("sleep 1")
