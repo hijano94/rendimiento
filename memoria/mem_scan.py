@@ -8,7 +8,7 @@ if os.path.exists(fich):
         os.system("rm "+fich)
 
 for i in range(time):
-        os.system("sleep 1")
+        os.system("sleep 0.1")
         mem = 0
         for p in proc:
                 mem_str = commands.getoutput("python mem_info.py | grep "+p+" | awk '{ print $7 }' ")
